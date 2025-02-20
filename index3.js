@@ -134,7 +134,7 @@ function setProgressBar(e) {
     music.currentTime = (clickX / width) * music.duration;
 }
 
-playBtn.addEventListener('click', autoPlay);
+playBtn.addEventListener('click', togglePlay);
 prevBtn.addEventListener('click', () => changeMusic(-1));
 nextBtn.addEventListener('click', () => changeMusic(1));
 music.addEventListener('ended', () => changeMusic(1));
